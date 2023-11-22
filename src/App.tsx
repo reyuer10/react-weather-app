@@ -33,7 +33,7 @@ const App: React.FC = () => {
 
   return (
     <div className="font-kanit h-screen w-screen flex justify-center items-center">
-      <div className="shadow-lg p-5 rounded-2xl">
+      <div className="shadow-lg p-5 rounded-2xl flex flex-col">
         <Header />
         <SearchFilter
           location={location}
