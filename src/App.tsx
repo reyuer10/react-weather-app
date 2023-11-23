@@ -29,6 +29,8 @@ const App: React.FC = () => {
     fetchData();
   };
 
+  console.log(data)
+
   // h-24 w-24 -left-4 -top-4 absolute  bg-yellow-300 rounded-full shadow-2xl shadow-yellow-400 border-4 border-yellow-300
   const weatherCondition = data.weather?.[0]?.main;
   let styleCondition =
@@ -53,6 +55,11 @@ const App: React.FC = () => {
         styledBackground =
           "from-blue-400 bg-gradient-to-t to-amber-200 via-sky-200";
         break;
+        case "Clear":
+          styleCondition = "h-24 w-24 -left-4 -top-4 absolute  bg-yellow-300 rounded-full shadow-2xl shadow-yellow-400 border-4 border-yellow-300";
+          styledBackground =
+            "from-blue-400 bg-gradient-to-t to-amber-200 via-sky-200";
+          break;
       default:
         styleCondition =
           "h-24 w-24 -left-4 -top-4 absolute  bg-yellow-300 rounded-full shadow-2xl shadow-yellow-400 border-4 border-yellow-300";
