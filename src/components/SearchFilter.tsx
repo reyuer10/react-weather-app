@@ -14,11 +14,12 @@ const SearchFilter: React.FC<SearchFilterProps> = ({
   return (
     <div className="flex shadow-md rounded-full px-4 py-2 border border-slate-300 focus-within:border-slate-400">
       <input
+
         type="text"
         value={location}
         onChange={(e) => setLocation(e.target.value)}
         placeholder="Search location"
-        className="outline-none"
+        className="outline-none w-full bg-transparent"
       />
       <button onClick={search}>
         <svg
